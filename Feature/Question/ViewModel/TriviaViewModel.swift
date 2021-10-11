@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+//protocol TriviaViewModel: ObservableObject {
+//    func getTriviaQuestions() async
+//}
+//
+//@MainActor
+//
+//final class 
+
+
+
+
