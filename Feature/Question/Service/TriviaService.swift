@@ -13,7 +13,7 @@ protocol TriviaService {
     
 }
 
-final class TriviaServiceImp1: TriviaService {
+final class TriviaServiceImpl: TriviaService {
     
     func fetchRandomTriviaQuestions() async throws -> Response {
         let urlSession = URLSession.shared

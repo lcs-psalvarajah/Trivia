@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Response: Codable {
+struct Response: Decodable {
     
     let response_code: Int
     let results: [Result]

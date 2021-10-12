@@ -23,39 +23,29 @@ struct TriviaView: View {
                 .font(.title)
                 .fontWeight(.light)
             
-Spacer()
+            Spacer()
             
-
-                            Button(action: {}) {
-                                Text("\(item.incorrect_answers.first!)")
-                            }
-
-
+            
+            Button(action: {}) {
+                Text("\(item.incorrect_answers[0])")
+            }
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 Text("\(item.correct_answer)")
             }
-
-
-
+            
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Button")
+                Text("\(item.incorrect_answers[1])")
             }
-
+            
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                Text("\(item.incorrect_answers[2])")
             }
             
             Spacer()
         }
     }
-    
-//    func possibleAnswers() {
-//
-//        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-//            Text("p")
-//        }
-    }
+}
 
 
 struct TriviaView_Previews: PreviewProvider {

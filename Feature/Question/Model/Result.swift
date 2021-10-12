@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Result: Codable {
+struct Result: Decodable {
     
     let category: String
     let type: String
