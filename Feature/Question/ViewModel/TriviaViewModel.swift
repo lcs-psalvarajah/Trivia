@@ -19,7 +19,7 @@ final class TriviaViewModelImpl: TriviaViewModel {
     @Published private(set) var triviaResponses: [Response] = []
     
     private let service: TriviaService
-    
+
     init(service: TriviaService) {
         self.service = service
     }
