@@ -17,15 +17,25 @@ struct TriviaScreen: View {
                 
                 LoadingView(text: "Fetching Questions")
             } else {
-                
-                // code line issue
-                
                 TriviaView(trivia: vm.triviaResponses.last!.results.first!)
+                
+                Button(action: {
+                    Task {
+                        await getNewQuestion()
+                    }
+                }, label: {
+                    Text("Get new question")
+                })
+                
             }
         }
         .task {
             await vm.getRandomTriviaQuestions()
         }
+    }
+    
+    func getNewQuestion() async {
+        await vm.getRandomTriviaQuestions()
     }
 }
 
