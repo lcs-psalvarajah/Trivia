@@ -19,16 +19,18 @@ final class TriviaViewModelImpl: TriviaViewModel {
     @Published private(set) var triviaResponses: [Response] = []
     
     private let service: TriviaService
-
+    
     init(service: TriviaService) {
         self.service = service
     }
     
     func getRandomTriviaQuestions() async {
         do {
+            
             let response = try await service.fetchRandomTriviaQuestions()
             
             triviaResponses.append(response)
+            
         } catch {
             print(error)
         }

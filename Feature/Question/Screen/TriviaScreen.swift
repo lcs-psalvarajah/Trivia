@@ -12,11 +12,20 @@ struct TriviaScreen: View {
     @StateObject private var vm = TriviaViewModelImpl(service: TriviaServiceImpl())
     
     var body: some View {
-        if vm.triviaResponses.isEmpty {
-            
-            LoadingView(text: "Fetching Questions")
+        VStack {
+            if vm.triviaResponses.isEmpty {
+                
+                LoadingView(text: "Fetching Questions")
+            } else {
+                
+                // code line issue
+                
+                TriviaView(trivia: vm.triviaResponses.last!.results.first!)
+            }
         }
-      
+        .task {
+            await vm.getRandomTriviaQuestions()
+        }
     }
 }
 

@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct TriviaView: View {
-    let item: Result
+    let trivia: Result
     
     var body: some View {
         VStack(spacing: 8) {
-            Text("\(item.category)")
+            Text(trivia.category)
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             
-            Text("\(item.difficulty)")
+            Text(trivia.difficulty)
                 .font(.headline)
             
-            Text("\(item.question)")
+            Text(trivia.question)
                 .font(.title)
                 .fontWeight(.light)
             
@@ -27,19 +27,19 @@ struct TriviaView: View {
             
             
             Button(action: {}) {
-                Text("\(item.incorrect_answers[0])")
+                Text(trivia.incorrect_answers[0])
             }
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("\(item.correct_answer)")
+                Text(trivia.correct_answer)
             }
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("\(item.incorrect_answers[1])")
+                Text(trivia.incorrect_answers[1])
             }
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("\(item.incorrect_answers[2])")
+                Text(trivia.incorrect_answers[2])
             }
             
             Spacer()
@@ -50,6 +50,6 @@ struct TriviaView: View {
 
 struct TriviaView_Previews: PreviewProvider {
     static var previews: some View {
-        TriviaView(item: Result.dummyData.first!)
+        TriviaView(trivia: Result.dummyData.first!)
     }
 }
