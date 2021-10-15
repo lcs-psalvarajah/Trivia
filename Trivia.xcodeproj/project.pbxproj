@@ -19,7 +19,6 @@
 		C893506D270F33590050D27F /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893506C270F33590050D27F /* TriviaView.swift */; };
 		C893506F270F336E0050D27F /* TriviaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893506E270F336E0050D27F /* TriviaService.swift */; };
 		C8935071270F33830050D27F /* TriviaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8935070270F33830050D27F /* TriviaViewModel.swift */; };
-		C89CBEC82718658700BB1047 /* PossibleAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CBEC72718658700BB1047 /* PossibleAnswers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		C893506C270F33590050D27F /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
 		C893506E270F336E0050D27F /* TriviaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaService.swift; sourceTree = "<group>"; };
 		C8935070270F33830050D27F /* TriviaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaViewModel.swift; sourceTree = "<group>"; };
-		C89CBEC72718658700BB1047 /* PossibleAnswers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleAnswers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +107,6 @@
 			children = (
 				C8935060270F2FE90050D27F /* Response.swift */,
 				C8935062270F2FF70050D27F /* Result.swift */,
-				C89CBEC72718658700BB1047 /* PossibleAnswers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,7 +229,6 @@
 				C8935063270F2FF70050D27F /* Result.swift in Sources */,
 				C8935050270F2EE10050D27F /* ContentView.swift in Sources */,
 				C81ABD2327165DA700CC5D7E /* LoadingView.swift in Sources */,
-				C89CBEC82718658700BB1047 /* PossibleAnswers.swift in Sources */,
 				C893506D270F33590050D27F /* TriviaView.swift in Sources */,
 				C893504E270F2EE10050D27F /* TriviaApp.swift in Sources */,
 				C8935068270F32B80050D27F /* TriviaScreen.swift in Sources */,
