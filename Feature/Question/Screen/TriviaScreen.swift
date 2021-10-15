@@ -25,6 +25,8 @@ struct TriviaScreen: View {
                     }
                 }, label: {
                     Text("Get new question")
+                        .cornerRadius(.infinity)
+                    
                 })
                 
             }

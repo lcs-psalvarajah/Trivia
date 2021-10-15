@@ -59,10 +59,12 @@ struct TriviaView: View {
                         Image(systemName: "1.circle.fill")
                         
                         Text(trivia.incorrect_answers[0])
+                            .padding(5)
+                            .frame(width: 250.0)
                             .background(.white)
                             .font(Font.system(size: 18, design: .monospaced))
                             .cornerRadius(.infinity)
-                            .padding(5)
+      
                     }
                 }
                 
@@ -70,10 +72,12 @@ struct TriviaView: View {
                     HStack {
                         Image(systemName: "2.circle.fill")
                         Text(trivia.correct_answer)
+                            .padding(5)
+                            .frame(width: 250.0)
                             .background(.white)
                             .font(Font.system(size: 18, design: .monospaced))
                             .cornerRadius(.infinity)
-                            .padding(5)
+                            
                     }
                 }
                 
@@ -82,10 +86,12 @@ struct TriviaView: View {
                     HStack {
                         Image(systemName: "3.circle.fill")
                         Text(trivia.incorrect_answers[1])
+                            .padding(5)
+                            .frame(width: 250.0)
                             .background(.white)
                             .font(Font.system(size: 18, design: .monospaced))
                             .cornerRadius(.infinity)
-                            .padding(5)
+                      
                     }
                 }
                 
@@ -93,10 +99,12 @@ struct TriviaView: View {
                     HStack {
                         Image(systemName: "4.circle.fill")
                         Text(trivia.incorrect_answers[2])
+                            .padding(5)
+                            .frame(width: 250.0)
                             .background(.white)
                             .font(Font.system(size: 18, design: .monospaced))
                             .cornerRadius(.infinity)
-                            .padding(10)
+                            
                         
                     }
                 }
